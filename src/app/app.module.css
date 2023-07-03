@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Comforter&family=Moirai+One&family=Rajdhani:wght@500&display=swap");
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: #232323;
+  box-sizing: border-box;
+}
+
+.subContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5rem;
+  height: calc(100vh - 8vh);
+  width: calc(100% - 5rem);
+  outline: blue solid 3px;
+  justify-content: center;
+}
+
+/* .rotatedP {
+  display: flex;
+  font-size: 3rem;
+  min-height: fit-content;
+  height: 55%;
+  flex-wrap: nowrap;
+  writing-mode: vertical-lr;
+  position: absolute;
+  top: 37%;
+  transform: translateY(-50%);
+  color: white;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+  letter-spacing: 0.3rem;
+  font-family: "Comforter", cursive;
+  text-decoration: underline;
+  z-index: 100;
+} */
+
+.spanContainer {
+  display: flex;
+  justify-content: center;
+  height: 50%;
+  position: relative;
+}
+
+.title {
+  top: 10%;
+  position: absolute;
+  width: 45%;
+  left: 0;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
+  height: 20%;
+  font-size: 4rem;
+  color: #520144;
+  z-index: 50;
+  -webkit-text-stroke: 0.2px rgba(255, 255, 255, 0.5);
+  transform: matrix(1, 0, 0.5, 1.5, 10, 10);
+  line-height: 110%;
+}
+
+.middleTitle {
+  text-decoration: underline;
+  top: 18%;
+  left: 2%;
+  font-family: "Rajdhani", sans-serif;
+  line-height: 110%;
+  font-weight: 600;
+  position: absolute;
+  width: 45%;
+  height: 20%;
+  font-size: 4rem;
+  -webkit-text-stroke: 0.1px rgba(255, 255, 255, 0.4);
+  transform: matrix(1, 0, 0.5, 1.5, 20, 10);
+  /* color: #49023d; */
+  z-index: 49;
+}
+
+.aboutContainer {
+  display: flex;
+  justify-content: start;
+  outline: pink solid 3px;
+  height: 50%;
+}
+
+.about {
+  width: 65%;
+  height: 100%;
+  font-size: 2.5rem;
+  font-weight: 900;
+  font-family: "Moirai One", cursive;
+  outline: red solid 3px;
+  background-color: #fff; /* Define el fondo con un gradiente o color sólido */
+  -webkit-background-clip: text; /* Establece la propiedad background-clip para WebKit (Safari, Chrome, etc.) */
+  -moz-background-clip: text; /* Establece la propiedad background-clip para Mozilla (Firefox) */
+  background-clip: text; /* Establece la propiedad background-clip para otros navegadores */
+  color: transparent; /* Hace que el texto sea transparente */
+}
+
+.name {
+  font-family: "Comforter", cursive;
+  color: #b60398;
+  text-decoration: underline;
+  font-size: 2.8rem;
+  font-weight: 100;
+  -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.5);
+}
+
+.proyectsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  width: 32%;
+  height: 80%;
+  position: absolute;
+  gap: 10px;
+  right: 0;
+  outline: pink solid 3px;
+}
+
+.proyectsH2 {
+  display: flex;
+  width: 100%;
+  outline: blue solid 3px;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 900;
+  font-family: "Moirai One", cursive;
+  background-image: linear-gradient(
+    to bottom,
+    #2c2c2c,
+    hsl(0, 0%, 100%)
+  ); /* Define el fondo con un gradiente o color sólido */
+  -webkit-background-clip: text; /* Establece la propiedad background-clip para WebKit (Safari, Chrome, etc.) */
+  -moz-background-clip: text; /* Establece la propiedad background-clip para Mozilla (Firefox) */
+  background-clip: text; /* Establece la propiedad background-clip para otros navegadores */
+  color: transparent; /* Hace que el texto sea transparente */
+}
+
+.medConnectContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 40%;
+  margin-top: 2%;
+  gap: 10px;
+}
+
+.medConnect {
+  width: 100%;
+  height: 100%;
+}
+
+.medConnectlinksContainer {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  outline: yellow solid 3px;
+}
+
+.links {
+  color: #fff;
+  font-size: 1.2rem;
+}
