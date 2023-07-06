@@ -15,7 +15,6 @@
   margin-left: 6rem;
   height: calc(100vh - 8vh);
   width: calc(100% - 6rem);
-  outline: blue solid 3px;
   justify-content: center;
 }
 
@@ -80,7 +79,6 @@
 .aboutContainer {
   display: flex;
   justify-content: start;
-  outline: pink solid 3px;
   height: 50%;
 }
 
@@ -90,7 +88,6 @@
   font-size: 2.5rem;
   font-weight: 900;
   font-family: "Moirai One", cursive;
-  outline: red solid 3px;
   background-color: #fff; /* Define el fondo con un gradiente o color sólido */
   -webkit-background-clip: text; /* Establece la propiedad background-clip para WebKit (Safari, Chrome, etc.) */
   -moz-background-clip: text; /* Establece la propiedad background-clip para Mozilla (Firefox) */
@@ -112,18 +109,18 @@
   flex-direction: column;
   align-items: center;
   align-content: center;
-  width: 32%;
+  width: 31%;
   height: 80%;
   position: absolute;
   gap: 10px;
   right: 0;
-  outline: pink solid 3px;
+  border: #464646 solid 3px;
 }
 
 .proyectsH2 {
   display: flex;
   width: 100%;
-  outline: blue solid 3px;
+  border-bottom: #464646 solid 3px;
   justify-content: center;
   font-size: 3rem;
   font-weight: 900;
@@ -158,7 +155,6 @@
   width: 100%;
   height: auto;
   justify-content: center;
-  outline: yellow solid 3px;
 }
 
 .links {

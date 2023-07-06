@@ -3,7 +3,6 @@
   flex-direction: column;
   position: fixed;
   height: calc(100vh - 8vh);
-  border-top: #464646 solid 3px;
   border-right: #464646 solid 3px;
   width: 1em;
   list-style: none;

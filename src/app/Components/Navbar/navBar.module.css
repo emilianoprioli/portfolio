@@ -4,7 +4,7 @@
   height: 8vh;
   align-items: center;
   justify-content: space-between;
-  outline: red solid 3px;
+  border: #464646 solid 3px;
 }
 
 .p {
