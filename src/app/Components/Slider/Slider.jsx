@@ -18,7 +18,7 @@ const Frameworks = [
 ];
 
 const Slider = () => {
-  const scrollRef = useAutoScrollRef(0.5, 3);
+  const scrollRef = useAutoScrollRef(0.5, 4);
 
   return (
     <div ref={scrollRef} className={style.mainContainer}>

@@ -3,21 +3,24 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  height: 100vh;
-  width: 100%;
+  height: 90%;
+  width: 80%;
   box-sizing: border-box;
+  border: #6649b8 solid 3px;
+  border-radius: 40px;
 }
 
 .imgContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 33%;
+  width: 25%;
   flex-wrap: nowrap;
+  overflow: hidden;
 }
 
 .img {
   display: flex;
-  width: 60%;
+  width: 30%;
   object-fit: contain;
 }

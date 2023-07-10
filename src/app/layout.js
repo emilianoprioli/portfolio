@@ -12,11 +12,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <link
+          href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+          rel="stylesheet"
+        />
         <script
           rel="preload"
           href="https://kit.fontawesome.com/6a7826155f.js"
           as="script"
           crossorigin="use-credentials"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       </head>
       <body className={inter.className}>{children}</body>
     </html>

@@ -8,18 +8,21 @@
 
 .subContainer {
   display: flex;
+  margin: auto;
   position: relative;
   width: calc(100vw - 6rem);
-  height: calc(100% - 8vh);
+  height: calc(100% - 15vh);
   margin-left: 6rem;
   align-items: center;
+  overflow: hidden;
 }
 
 .ul {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 100%;
+  min-height: 100%;
+  height: auto;
   overflow: hidden;
   width: 100%;
   font-size: 1rem;
@@ -30,8 +33,7 @@
 
 .ol {
   display: flex;
-  margin: 0 auto;
-  flex-direction: column;
+  margin: 2% auto;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -54,19 +56,27 @@
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 40%;
+  height: 50%;
   width: 20%;
+  margin: 1% 0;
+  padding: 1.5%;
   border: #464646 solid 3px;
+  transition: all 200ms;
+}
+
+.liOl:hover {
+  color: #c0c0c0;
+  background-color: #5e7a8a9f;
+  transform: scale(1.2);
 }
 
 .li {
   display: flex;
   flex-direction: column;
-  height: 40%;
+  height: 100%;
   width: 100%;
   border: #464646 solid 3px;
-  outline: orange solid 3px;
-  gap: 5%;
+  gap: 5px;
 }
 
 .h3 {
@@ -75,4 +85,10 @@
   width: 100%;
   font-size: 1.4rem;
   color: #fff;
+}
+
+.p {
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  word-spacing: 1px;
 }

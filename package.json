@@ -15,6 +15,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "antd": "^5.6.3",
+    "aos": "^2.3.4",
     "autoprefixer": "10.4.14",
     "babel-plugin-macros": "^3.1.0",
     "eslint": "8.42.0",
@@ -24,6 +25,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "sass": "^1.63.4",
+    "styled-components": "^6.0.3",
     "tailwindcss": "3.3.2"
   }
 }

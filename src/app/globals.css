@@ -107,6 +107,7 @@ video {
   border: 0;
   font-size: 100%;
   font: inherit;
+  scroll-behavior: smooth;
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -124,6 +125,7 @@ section {
   display: block;
 }
 body {
+  scroll-behavior: smooth;
   line-height: 1;
 }
 ol,
@@ -147,7 +149,7 @@ table {
 }
 
 body::-webkit-scrollbar {
-  width: 0.25rem;
+  width: 0.3rem;
 }
 
 body::-webkit-scrollbar-track {
@@ -155,5 +157,10 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: #6649b8;
+  background-color: #6649b8;
+  transition: width 0.3s ease;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  width: 1rem;
 }
