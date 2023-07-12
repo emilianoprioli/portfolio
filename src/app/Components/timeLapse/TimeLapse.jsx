@@ -21,14 +21,21 @@ const TimeLapse = () => {
             allowfullscreen></iframe>
         </div>
         <h3 class={style.fecha}>
-          I am glad to colaborate in MEDCONNECT. Our platform, provides users
-          with a seamless experience for booking appointments. For the owners of
-          the medical center, we developed an integral admin panel that includes
-          all the functions needed to manage and control. My role in the
-          platform development was focused on creating the pre-coded user
-          experience and the overall appearance of the website. I am grateful to
-          the team for choosing me as the leader of the front-end team, and I
-          look forward to working on more projects together.
+          The objective of the application was to develop a comprehensive
+          appointment system for Medicina y Salud Berazategui. The application
+          features include the primary goal of the application itself, as well
+          as an administrative panel developed to manage all its functionalities
+          and characteristics. For clients, we implemented user creation,
+          registration, and modification, along with third-party login.<br></br>{" "}
+          When it comes to acquiring an appointment at the medical center, it
+          was based on the selection of days, time slots, or professionals. This
+          development approach was chosen to address the need for immediate
+          appointments, where patients would be assigned to available
+          professionals, while allowing them to choose their preferred
+          specialist when an appointment becomes available.<br></br> To save
+          time, external payment methods were implemented, which presented a
+          significant challenge due to administrative delays when many patients
+          arrive simultaneously at the health center.
         </h3>
       </div>
       <div class={style.evento}>

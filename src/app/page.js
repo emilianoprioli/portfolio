@@ -8,6 +8,8 @@ import TimeLapse from "./Components/timeLapse/TimeLapse";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Slider from "./Components/Slider/Slider";
+import Skills from "./Components/skills/Skills";
+import EmailForm from "./Components/emailForm/EmailForm";
 
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(0);
@@ -57,29 +59,36 @@ export default function Home() {
           </span>
           <p className={style.developer}>DEVELOPER</p>
           <span className={style.arrowContainer}>
+            Scroll down
             <FontAwesomeIcon
               className={style.arrow}
               icon={faArrowDown}
               bounce
             />
-            Scroll
           </span>
         </div>
       </div>
 
       <div className={style.aboutContainer}>
         <h3>About me</h3>
-        <p>
+        <p className={style.aboutP}>
           My name is Emiliano Prioli and I am a FullStack Developer, but my
           passion is the Front-end design
         </p>
-        <h3>My stack</h3>
+        <h3 className={style.h3}>My stack</h3>
         <div className={style.sliderContainer}>
           <Slider />
         </div>
       </div>
+      <Skills />
       <div className={style.TimeLapseContainer}>
+        <h3 className={style.h3}>Proyects</h3>
         <TimeLapse />
+      </div>
+      <div></div>
+      <div className={style.emailContainer}>
+        <h3 className={style.h3}>Contact me</h3>
+        <EmailForm />
       </div>
       {/* <div className={style.aboutContainer}>
           <p className={style.about}>
