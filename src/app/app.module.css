@@ -113,7 +113,7 @@
   align-items: center;
   height: 20%;
   gap: 5%;
-  border-top: #6649b8 solid 3px;
+  border-top: #907acc solid 3px;
 }
 
 .h3 {
@@ -132,13 +132,11 @@
 .aboutP {
   display: flex;
   text-align: center;
-  font-family: "Russo One", sans-serif;
-  font-weight: 600;
+  font-weight: 900;
   width: 100%;
   font-size: 2rem;
   color: #adadad;
   word-spacing: 0px;
-  -webkit-text-stroke: 0.5px rgb(0, 0, 0, 0.8);
 }
 
 .sliderContainer {
@@ -148,22 +146,27 @@
 }
 
 .emailContainer {
-  outline: blue solid 3px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 10%;
+  height: 14%;
+  gap: 5%;
 }
 
 .TimeLapseContainer {
   height: 50%;
   width: 100%;
-  border-top: #6649b8 solid 3px;
-  border-bottom: #6649b8 solid 3px;
   justify-content: space-around;
   align-items: center;
   display: flex;
   flex-direction: column;
+}
+
+.contact {
+  color: #949494;
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-decoration: underline #907acc 2px;
 }

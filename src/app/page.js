@@ -2,7 +2,6 @@
 import { useEffect, useState } from "react";
 import Navbar from "./Components/Navbar/Navbar";
 import style from "./app.module.css";
-import SideBar from "./Components/SideBar/Siderbar";
 import { styled } from "styled-components";
 import TimeLapse from "./Components/timeLapse/TimeLapse";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
@@ -10,6 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Slider from "./Components/Slider/Slider";
 import Skills from "./Components/skills/Skills";
 import EmailForm from "./Components/emailForm/EmailForm";
+import { Span } from "./assets/components/components";
 
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(0);
@@ -70,10 +70,13 @@ export default function Home() {
       </div>
 
       <div className={style.aboutContainer}>
-        <h3>About me</h3>
+        <h3 className={style.h3}>About me</h3>
         <p className={style.aboutP}>
-          My name is Emiliano Prioli and I am a FullStack Developer, but my
-          passion is the Front-end design
+          My name is Emiliano Prioli, and I am an enthusiastic FullStack
+          Developer. I discovered my passion for development at the beginning of
+          2022. Since then, my focus and mindset have undergone a radical
+          change. Now, my main goals are enhancing user experience and improving
+          the appearance of websites.
         </p>
         <h3 className={style.h3}>My stack</h3>
         <div className={style.sliderContainer}>
@@ -87,7 +90,9 @@ export default function Home() {
       </div>
       <div></div>
       <div className={style.emailContainer}>
-        <h3 className={style.h3}>Contact me</h3>
+        <h3 className={style.contact}>
+          <Span>Let's talk</Span> Contact me!
+        </h3>
         <EmailForm />
       </div>
       {/* <div className={style.aboutContainer}>

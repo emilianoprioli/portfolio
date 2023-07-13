@@ -38,7 +38,7 @@ export default function EmailForm() {
             placeholder="Your message"></input>
         </div>
         <button className={styles.button} type="submit">
-          enviar
+          Send
         </button>
       </form>
     </div>

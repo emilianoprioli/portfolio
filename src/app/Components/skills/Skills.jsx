@@ -1,7 +1,4 @@
 import style from "./Skills.module.css";
-import SideBar from "../SideBar/Siderbar";
-import Navbar from "../Navbar/Navbar";
-import Slider from "../Slider/Slider";
 
 export default function Skills() {
   return (
