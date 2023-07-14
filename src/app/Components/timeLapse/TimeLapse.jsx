@@ -1,10 +1,15 @@
 "use client";
+import { useEffect } from "react";
 import style from "./timeLapse.module.css";
 import Aos from "aos";
 import Image from "next/image";
 
 const TimeLapse = () => {
-  Aos.init();
+  useEffect(() => {
+    if (typeof document !== "undefined") {
+      Aos.init();
+    }
+  }, []);
 
   return (
     <div class={style.container}>
