@@ -1,71 +1,33 @@
-"use client";
-import { useEffect, useState } from "react";
 import Navbar from "./Components/Navbar/Navbar";
 import style from "./app.module.css";
-import { styled } from "styled-components";
 import TimeLapse from "./Components/timeLapse/TimeLapse";
-import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Slider from "./Components/Slider/Slider";
 import Skills from "./Components/skills/Skills";
 import EmailForm from "./Components/emailForm/EmailForm";
-import { Span } from "./assets/components/components";
+import dynamic from "next/dynamic";
+import { Span, ArrowRenderizer } from "./assets/components/components";
 
 export default function Home() {
-  const [isScrolled, setIsScrolled] = useState(0);
-
-  const Div = styled.div`
-    display: flex;
-    min-width: 20vw;
-    height: 30px;
-    transition: all 1s;
-    background-color: #c7c7c7;
-  `;
-
-  const ScrollableDiv = ({ opacity }) => {
-    useEffect(() => {
-      const handleScroll = () => {
-        const scrollTop =
-          window.pageYOffset || document.documentElement.scrollTop;
-
-        setIsScrolled(scrollTop + 250);
-      };
-
-      window.addEventListener("scroll", handleScroll);
-      return () => {
-        window.removeEventListener("scroll", handleScroll);
-      };
-    }, []);
-
-    return (
-      <div>
-        <Div style={{ width: isScrolled, opacity: opacity }}></Div>
-      </div>
-    );
-  };
-
+  const ScrollableDiv = dynamic(
+    () => import("./assets/components/components"),
+    {
+      ssr: false,
+    }
+  );
   return (
     <main className={style.container}>
       <Navbar />
-
       <div className={style.landing}>
         <div className={style.spanContainer}>
           <span className={style.title}>
-            FRONT <ScrollableDiv style={{ width: isScrolled }} /> END
+            FRONT <ScrollableDiv /> END
           </span>
           <span className={style.middleTitle}>
             FRONT <ScrollableDiv opacity={0}></ScrollableDiv>
             END
           </span>
           <p className={style.developer}>DEVELOPER</p>
-          <span className={style.arrowContainer}>
-            Scroll down
-            <FontAwesomeIcon
-              className={style.arrow}
-              icon={faArrowDown}
-              bounce
-            />
-          </span>
+          <ArrowRenderizer />
         </div>
       </div>
 

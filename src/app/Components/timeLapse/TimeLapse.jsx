@@ -1,3 +1,4 @@
+"use client";
 import style from "./timeLapse.module.css";
 import Aos from "aos";
 import Image from "next/image";
@@ -7,7 +8,6 @@ const TimeLapse = () => {
 
   return (
     <div class={style.container}>
-      /
       <div class={style.evento}>
         <div
           class={style.foto}

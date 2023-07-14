@@ -89,24 +89,6 @@
   /* transform: matrix(1, 0, 0.2, 1, 0, 5); */
 }
 
-.arrowContainer {
-  display: flex;
-  height: 10%;
-  width: 10%;
-  justify-content: space-around;
-  align-items: end;
-  position: absolute;
-  bottom: 9%;
-  right: 1%;
-  color: #adadad;
-}
-
-.arrow {
-  color: #000;
-  display: flex;
-  font-size: 1.8rem;
-}
-
 .aboutContainer {
   display: flex;
   flex-direction: column;
