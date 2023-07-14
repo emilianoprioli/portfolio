@@ -91,7 +91,7 @@ export default function Home() {
       <div></div>
       <div className={style.emailContainer}>
         <h3 className={style.contact}>
-          <Span>Let's talk</Span> Contact me!
+          <Span>Let&apos;s talk</Span> Contact me!
         </h3>
         <EmailForm />
       </div>

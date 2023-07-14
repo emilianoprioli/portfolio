@@ -1,6 +1,7 @@
 "use client";
 import style from "./Slider.module.css";
 import { useAutoScrollRef } from "./Handler.jsx";
+import Image from "next/image";
 
 const Frameworks = [
   {
@@ -78,8 +79,12 @@ const Slider = () => {
     <div ref={scrollRef} className={style.mainContainer}>
       {Frameworks.map((el, index) => {
         return (
-          <div className={style.imgContainer}>
-            <img
+          <div key={index} className={style.imgContainer}>
+            <Image
+              width={0}
+              height={0}
+              sizes="100vw"
+              key={index}
               src={`https://${el.icon}`}
               className={style.img}
               alt={`Framework ${index + 1}`}

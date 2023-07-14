@@ -1,16 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    images: {
-        domains: [
-            "cdn-icons-png.flaticon.com",
-            "upload.wikimedia.org",
-            "ajeetchaulagain.com",
-            "miro.medium.com",
-            "cdn.icon-icons.com",
-            "static-00.iconduck.com",
-            "camo.githubusercontent.com"
-          ]
-    },
-  };
+  images: {
+    domains: [
+      "cdn-icons-png.flaticon.com",
+      "git-scm.com",
+      "static-00.iconduck.com",
+      "upload.wikimedia.org",
+      "cdn.icon-icons.com",
+      "cdn.iconscout.com",
+      "miro.medium.com",
+      "ajeetchaulagain.com",
+    ],
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

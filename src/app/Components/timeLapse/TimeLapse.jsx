@@ -1,5 +1,6 @@
 import style from "./timeLapse.module.css";
 import Aos from "aos";
+import Image from "next/image";
 
 const TimeLapse = () => {
   Aos.init();
@@ -43,7 +44,13 @@ const TimeLapse = () => {
           class={style.foto}
           data-aos="fade-left"
           data-aos-anchor-placement="center-center">
-          <img src="/videogames.jpg" alt="" />
+          <Image
+            width={0}
+            height={0}
+            sizes="100vw"
+            src="/videogames.jpg"
+            alt=""
+          />
         </div>
         <h3 class={style.fecha}>18 de Agosto de 2023</h3>
       </div>
@@ -52,7 +59,7 @@ const TimeLapse = () => {
           class={style.foto}
           data-aos="fade-right"
           data-aos-anchor-placement="center-center">
-          <img src="./img/6.jpg" alt="" />
+          {/* <img src="./img/6.jpg" alt="" /> */}
         </div>
         <h3 class={style.fecha}>7 de Diciembre de 2021</h3>
       </div>

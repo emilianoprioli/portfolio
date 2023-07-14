@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
           href="https://kit.fontawesome.com/6a7826155f.js"
           as="script"
           crossorigin="use-credentials"></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" async></script>
       </head>
       <body className={inter.className}>{children}</body>
     </html>

@@ -1,12 +1,9 @@
 "use client";
 import { useEffect, useState, useRef, useCallback } from "react";
-import style from "./Slider.module.css";
 
 export const useAutoScrollRef = (Hz, elementsToMove, deps) => {
   const elementRef = useRef(null);
   const deepDeps = JSON.stringify([deps, elementsToMove]);
-  // This may seem like a sketchy comparison method, but it was actually approved by Dan Abramov (React core team member).
-  // https://github.com/facebook/react/issues/14476#issuecomment-471199055
 
   Hz = (1 / Hz) * 1000;
 
@@ -21,14 +18,10 @@ export const useAutoScrollRef = (Hz, elementsToMove, deps) => {
       for (let i = 0; i < elementsToMove; i++)
         a.push(element.children[i].cloneNode(true));
       a.forEach((e) => element.appendChild(e));
-      element.scrollBy({
-        top: element.children[0].clientHeight,
-        behaviour: "smooth",
-      });
       setTimeout(() => {
         for (let i = 0; i < elementsToMove; i++)
           element.removeChild(element.firstChild);
-      }, Hz / 2);
+      }, Hz / Hz - 300);
     }
   }, [Hz, elementsToMove, hover]);
 
