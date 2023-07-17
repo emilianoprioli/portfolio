@@ -1,6 +1,6 @@
 import Navbar from "./Components/Navbar/Navbar";
 import style from "./app.module.css";
-import TimeLapse from "./Components/timeLapse/TimeLapse";
+import TimeLapseRenderizer from "./Components/timeLapse/TimeLapse";
 import Slider from "./Components/Slider/Slider";
 import Skills from "./Components/skills/Skills";
 import EmailForm from "./Components/emailForm/EmailForm";
@@ -48,7 +48,7 @@ export default function Home() {
       <Skills />
       <div className={style.TimeLapseContainer}>
         <h3 className={style.h3}>Proyects</h3>
-        <TimeLapse />
+        <TimeLapseRenderizer />
       </div>
       <div></div>
       <div className={style.emailContainer}>

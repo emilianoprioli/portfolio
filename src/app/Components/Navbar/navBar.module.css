@@ -33,6 +33,11 @@
   font-size: 1.8rem;
 }
 
+.iconContainer a {
+  display: flex;
+  align-items: center;
+}
+
 .icon {
   color: #adadad;
   transition: all 100ms;

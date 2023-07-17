@@ -7,9 +7,15 @@ const Navbar = () => {
     <div className={style.container}>
       <p className={style.p}>Emiliano Prioli / Full Stack developer</p>
       <div className={style.iconContainer}>
-        <FontAwesomeIcon className={style.icon} icon={faLinkedin} />
-        <FontAwesomeIcon className={style.icon} icon={faGithub} />
-        <FontAwesomeIcon className={style.icon} icon={faEnvelope} />
+        <a href="https://www.linkedin.com/in/emiliano-prioli-543432234/?locale=en_US">
+          <FontAwesomeIcon className={style.icon} icon={faLinkedin} />
+        </a>
+        <a href="https://github.com/emilianoprioli">
+          <FontAwesomeIcon className={style.icon} icon={faGithub} />
+        </a>
+        <a href="mailto:emilianoprioli.ep@gmail.com">
+          <FontAwesomeIcon className={style.icon} icon={faEnvelope} />
+        </a>
         <FontAwesomeIcon className={style.icon} icon={faMoon} />
       </div>
     </div>

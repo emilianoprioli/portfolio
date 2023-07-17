@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import { styled } from "styled-components";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import dynamic from "next/dynamic";
 
 export const Span = styled.span`
   color: #000;
