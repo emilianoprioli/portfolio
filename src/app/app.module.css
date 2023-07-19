@@ -10,7 +10,6 @@
   flex-direction: column;
   width: 100%;
   height: 800vh;
-  background-color: #232323;
   box-sizing: border-box;
   overflow-x: hidden;
 }
@@ -44,7 +43,7 @@
   font-family: "Russo One", sans-serif;
   font-weight: 600;
   font-size: 12rem;
-  color: #adadad;
+  color: var(--font-color);
   z-index: 50;
   letter-spacing: 0px;
   word-spacing: 0px;
@@ -65,8 +64,8 @@
   position: absolute;
   width: 100%;
   font-size: 12rem;
-  color: #00000034;
-  -webkit-text-stroke: 0.1px rgba(255, 255, 255, 0.1);
+  color: #00000081;
+  -webkit-text-stroke: 0.1px rgba(255, 255, 255, 0.219);
   /* transform: matrix(1, 0, 0.2, 1, 5, 5); */
   /* color: #49023d; */
   z-index: 49;
@@ -82,7 +81,7 @@
   position: absolute;
   width: 100%;
   font-size: 12rem;
-  color: #adadad;
+  color: var(--font-color);
   letter-spacing: 5px;
   word-spacing: 0px;
   -webkit-text-stroke: 0.5px rgb(0, 0, 0, 0.8);
@@ -99,6 +98,7 @@
 }
 
 .h3 {
+  outline: red solid 3px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -106,7 +106,7 @@
   font-weight: 600;
   width: 100%;
   font-size: 5rem;
-  color: #adadad;
+  color: var(--font-color);
   word-spacing: 0px;
   -webkit-text-stroke: 0.5px rgb(0, 0, 0, 0.8);
 }
@@ -117,7 +117,7 @@
   font-weight: 900;
   width: 100%;
   font-size: 2rem;
-  color: #adadad;
+  color: var(--font-color);
   word-spacing: 0px;
 }
 
@@ -147,8 +147,32 @@
 }
 
 .contact {
-  color: #949494;
+  color: var(--font-color);
   font-size: 2.5rem;
   font-weight: 800;
   text-decoration: underline #907acc 2px;
+}
+
+/*
+!Medias query zone
+*/
+
+@media (max-width: 400px) {
+  .h3,
+  .title,
+  .middleTitle,
+  .developer {
+    font-size: 5rem;
+    flex-direction: column;
+    height: 50%;
+  }
+
+  .developer {
+    top: 45%;
+    font-size: 3rem;
+  }
+
+  .TimeLapseContainer {
+    height: 45%;
+  }
 }

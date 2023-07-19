@@ -15,6 +15,45 @@ const Div = styled.div`
   height: 30px;
   transition: all 250ms;
   background-color: #c7c7c7;
+
+  @media (max-width: 400px) {
+    display: none;
+  }
+`;
+
+export const BackgroundImage = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29kaW5nfGVufDB8fDB8fHww&w=1000&q=80");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  z-index: -1; /* Asegura que el fondo esté detrás del contenido */
+`;
+
+export const Overlay = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #63636350; /* Cambia el valor del canal alfa (4º valor) para ajustar la opacidad */
+  z-index: -1; /* Asegura que el fondo esté detrás del contenido */
+`;
+
+export const Certificates = styled.div`
+  display: flex;
+  width: 80%;
+  height: 20%;
+  justify-content: space-around;
+  align-items: center;
+  border: #907acc solid 3px;
+  border-radius: 40px;
+  margin: 0 auto;
 `;
 
 export const ArrowRenderizer = () => {

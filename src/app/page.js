@@ -5,7 +5,13 @@ import Slider from "./Components/Slider/Slider";
 import Skills from "./Components/skills/Skills";
 import EmailForm from "./Components/emailForm/EmailForm";
 import dynamic from "next/dynamic";
-import { Span, ArrowRenderizer } from "./assets/components/components";
+import {
+  Span,
+  ArrowRenderizer,
+  Overlay,
+  BackgroundImage,
+  Certificates,
+} from "./assets/components/components";
 
 export default function Home() {
   const ScrollableDiv = dynamic(
@@ -17,6 +23,8 @@ export default function Home() {
   return (
     <main className={style.container}>
       <Navbar />
+      <BackgroundImage />
+      <Overlay />
       <div className={style.landing}>
         <div className={style.spanContainer}>
           <span className={style.title}>
@@ -46,6 +54,9 @@ export default function Home() {
         </div>
       </div>
       <Skills />
+      <Certificates>
+        <h3 className={style.h3}></h3>
+      </Certificates>
       <div className={style.TimeLapseContainer}>
         <h3 className={style.h3}>Proyects</h3>
         <TimeLapseRenderizer />
