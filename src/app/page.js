@@ -55,7 +55,7 @@ export default function Home() {
       </div>
       <Skills />
       <Certificates>
-        <h3 className={style.h3}></h3>
+        <h3 className={style.h3}>UtnvV</h3>
       </Certificates>
       <div className={style.TimeLapseContainer}>
         <h3 className={style.h3}>Proyects</h3>
