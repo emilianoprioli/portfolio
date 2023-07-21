@@ -97,6 +97,32 @@
   border-top: #907acc solid 3px;
 }
 
+.henryContainer {
+  display: flex;
+  width: 45%;
+  height: 30%;
+}
+
+.Henry {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.imageContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  height: 70%;
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+}
+
 .h3 {
   display: flex;
   align-items: center;

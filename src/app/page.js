@@ -5,12 +5,14 @@ import Slider from "./Components/Slider/Slider";
 import Skills from "./Components/skills/Skills";
 import EmailForm from "./Components/emailForm/EmailForm";
 import dynamic from "next/dynamic";
+import Image from "next/image";
 import {
   Span,
   ArrowRenderizer,
   Overlay,
   BackgroundImage,
   Certificates,
+  ImgContainer,
 } from "./assets/components/components";
 
 export default function Home() {
@@ -55,7 +57,60 @@ export default function Home() {
       </div>
       <Skills />
       <Certificates>
-        <h3 className={style.h3}>UtnvV</h3>
+        <h3>Henry Bootcamp</h3>
+        <div className={style.henryContainer}>
+          <Image
+            className={style.Henry}
+            width={0}
+            height={0}
+            sizes="100vw"
+            src="/CertificadoHenry.jpg"
+            alt=""
+          />
+        </div>
+        <h3>UTN Buenos Aires</h3>
+        <div className={style.imageContainer}>
+          <ImgContainer>
+            <Image
+              className={style.img}
+              width={0}
+              height={0}
+              sizes="100vw"
+              src="/fullstackUTN.jpg"
+              alt=""
+            />
+          </ImgContainer>
+          <ImgContainer>
+            <Image
+              className={style.img}
+              width={0}
+              height={0}
+              sizes="100vw"
+              src="/React.jpg"
+              alt=""
+            />
+          </ImgContainer>
+          <ImgContainer>
+            <Image
+              className={style.img}
+              width={0}
+              height={0}
+              sizes="100vw"
+              src="/Node.jpg"
+              alt=""
+            />
+          </ImgContainer>
+          <ImgContainer>
+            <Image
+              className={style.img}
+              width={0}
+              height={0}
+              sizes="100vw"
+              src="/angular.jpg"
+              alt=""
+            />
+          </ImgContainer>
+        </div>
       </Certificates>
       <div className={style.TimeLapseContainer}>
         <h3 className={style.h3}>Proyects</h3>

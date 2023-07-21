@@ -47,13 +47,22 @@ export const Overlay = styled.div`
 
 export const Certificates = styled.div`
   display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
   width: 80%;
-  height: 20%;
+  height: 25%;
+  gap: 2%;
   justify-content: space-around;
   align-items: center;
   border: #907acc solid 3px;
   border-radius: 40px;
   margin: 0 auto;
+`;
+
+export const ImgContainer = styled.div`
+  display: flex;
+  height: 45%;
+  width: 45%;
 `;
 
 export const ArrowRenderizer = () => {
